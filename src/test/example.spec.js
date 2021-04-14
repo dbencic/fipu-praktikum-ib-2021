@@ -12,12 +12,11 @@ FizzBuzz problem:
 */
 describe('fizz buz problem', function() {
     it('fizzBuzz should be a function', function () {
-        fizzBuzz();
+        fizzBuzz(1);
     });
     it("function should throw error if argument is not a number", 
             function(){
-        //assert.ifError();
-        //assert.ifError(fizzBuzz("1"));
+        expect(()=>fizzBuzz("pero")).to.throw(Error);
     });
     it("function should accept number as an argument", function(){
         fizzBuzz(1);
